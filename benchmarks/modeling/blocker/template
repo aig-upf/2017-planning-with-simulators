@@ -1,0 +1,19 @@
+(define (problem grid_${N}_${N}_${num_exits}_${k})
+  (:domain blocker_fn_strips)
+  (:objects ${objects} - node )
+  (:init
+    ${exit_predicates}
+    ${edge_predicates}
+    (= (cat) ${cat_initial_location})
+    (= (current_turn) blockers_turn)
+   )
+
+   (:goal
+    (and (@trapped (cat)))
+   )
+
+   ;; maximum distance between two nodes in a graph G=(V,E)
+   ;; is |V|-1
+   (:bounds (distance - int[0..${num_nodes}]))
+
+ )

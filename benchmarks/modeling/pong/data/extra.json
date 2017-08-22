@@ -1,0 +1,6 @@
+{
+	"features": [
+        {"name": "@distance_to_paddle"},
+        {"name": "@get_puck_pixel"}
+	]
+}

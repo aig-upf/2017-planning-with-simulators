@@ -1,0 +1,39 @@
+(define (problem grid_${N}_${num_preds}_${num_preys})
+  (:domain predator_and_prey)
+  (:objects
+    ${preys_obj_list} - prey
+    ${preds_obj_list} - predator
+    ${pos_obj_list} - position
+  )
+  (:init
+        (= (min_x) ${min_x})
+        (= (max_x) ${max_x})
+        (= (min_y) ${min_y})
+        (= (max_y) ${max_y})
+
+        ${position_coordinates}
+
+        ${preys_locations}
+
+        (= (num_preds) ${num_preds})
+        (= (current_slot) 0)
+
+        ${predators_locations}
+        ${predators_slots}
+
+        ${predators_dx_init}
+        ${predators_dy_init}
+    )
+
+   (:goal
+        (and
+            ${trapped_preys}
+        )
+   )
+
+   (:bounds
+    (coord - int[-1..${N}])
+    (slot - int[0..${num_preds}])
+   )
+
+ )

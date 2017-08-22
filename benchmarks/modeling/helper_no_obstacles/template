@@ -1,0 +1,24 @@
+(define (problem grid_${N}_${N}_${num_exits}_${k}_${num_cats}_${connections})
+  (:domain helper_fn_strips)
+  (:objects
+    ${cats} - cat
+    ${objects} - node
+  )
+  (:init
+    ${exit_predicates}
+    ${edge_predicates}
+    ${cats_locations}
+    ${cats_view_range}
+   )
+
+   (:goal
+    (and
+        ${escaped_predicates}
+    )
+   )
+
+   (:bounds
+    (distance - int[0..${max_distance_value}])
+   )
+
+ )
