@@ -1,8 +1,10 @@
 
 
-This is the online repository for the publication
+This is the online repository for the following publication:
 
 Guillem Francès, Miquel Ramı́rez, Nir Lipovetzky and Hector Geffner. [Purely declarative action representations are overrated: Classical planning with simulators](2017-ijcai-planning-with-simulators.pdf). In _Proceedings of the 26th International Joint Conference on Artificial Intelligence_, 2017. [https://doi.org/10.24963/ijcai.2017/600](https://doi.org/10.24963/ijcai.2017/600).
+
+Source code for the planner as well as the benchmarks used in the paper are described next.
 
 
 ## Planner Source Code
