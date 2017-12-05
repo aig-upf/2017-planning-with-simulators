@@ -22,7 +22,7 @@ The planner currently requires that a certain number of dependencies be installe
 1. The [Gecode CSP Solver](http://www.gecode.org/) (tested with version 4.4.0 only). The recommended way to install it is on `~/local`, i.e. by running `./configure --prefix=~/local` before the actual compilation.
 
 1. The [Clingo ASP solver](https://github.com/potassco/clingo) (optional, but used in the paper experiments). Precompiled packages are
-available for several platforms. The `clingo`
+available for several platforms.
 
 
 Once you have installed these projects locally or globally, your system needs to be configured with the following environment variables,
